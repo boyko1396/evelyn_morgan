@@ -14,6 +14,7 @@ import { SmoothScroll } from './modules/SmoothScroll.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import initializeAllSliders from './modules/SwiperInit.js';
 import ShowMoreToggle from './modules/ShowMoreToggle.js';
+import VideoModal from './modules/VideoModal.js';
 
 BaseHelpers.checkWebpSupport();
 BaseHelpers.addTouchClass();
@@ -30,4 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeAllSliders();
   // show moore video
   new ShowMoreToggle();
+  // video play
+  new VideoModal();
 });

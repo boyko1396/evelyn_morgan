@@ -182,6 +182,7 @@
   &:hover {
     text-decoration: none;
     @media (min-width: $lg-mf) {
+      color: #6DD3FF;
     }
   }
 }
@@ -348,15 +349,25 @@
     @media (max-width: $xs) {
       margin-bottom: 20rem;
     }
+    &:hover {
+      .students-card__btn-play {
+        .u-icon {
+          @media (min-width: $lg-mf) {
+            color: $whiteColor;
+          }
+        }
+      }
+    }
   }
   &__picture {
     @extend %img-cover;
     padding-bottom: 163.813229572%;
     border-radius: $radiusMd;
+    pointer-events: none;
     z-index: -1;
   }
   &__btn-play {
-    @extend %btn-reset;
+    @extend %link-cover, %btn-reset;
     background: url(../images/icons/dot-2.svg) 50%/contain no-repeat;
     width: 104rem;
     height: 104rem;
@@ -367,8 +378,14 @@
     color: $blueDenimColor;
     border-radius: 50%;
     box-shadow: $boxShadowAccent2;
-    transition: $transition;
     cursor: pointer;
+    &.is-hidden {
+      pointer-events: none;
+      visibility: hidden;
+    }
+    &:before {
+      z-index: 1;
+    }
     @media (max-width: $xs) {
       width: 84rem;
       height: 84rem;
@@ -381,6 +398,7 @@
       position: relative;
       top: 2rem;
       left: 4rem;
+      transition: $transition;
     }
   }
   &__content {
@@ -390,6 +408,27 @@
     margin: 0;
     font-style: italic;
     line-height: $lineHeight3;
+  }
+  &__video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 28rem;
+    left: 0;
+    border-radius: $radiusMd;
+    overflow: hidden;
+    @media (max-width: $sm) {
+      bottom: 20rem;
+    }
+    > * {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 2;
+    }
   }
 }
 

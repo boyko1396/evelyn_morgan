@@ -18,13 +18,13 @@
     display: flex;
     flex-wrap: wrap;
     @media (max-width: $sm) {
-      margin: 0 -70rem -70rem;
+      margin: 0 -10rem -70rem;
     }
     @media (max-width: $xs) {
-      margin: 0 -60rem -60rem;
+      margin-bottom: -60rem;
     }
     @media (max-width: 480px) {
-      margin: 0 -20rem -40rem;
+      margin-bottom: -40rem;
     }
     &-col {
       max-width: 25%;
@@ -34,16 +34,14 @@
       @media (max-width: $sm) {
         max-width: 50%;
         margin-bottom: 70rem;
-        padding: 0 70rem;
+        padding: 0 10rem;
         flex-basis: 50%;
       }
       @media (max-width: $xs) {
         margin-bottom: 60rem;
-        padding: 0 60rem;
       }
       @media (max-width: 480px) {
         margin-bottom: 40rem;
-        padding: 0 20rem;
       }
       &.is-hidden {
         display: none;
