@@ -1,0 +1,85 @@
+.author {
+  padding: 23rem 0 40rem;
+  @media (max-width: $sm) {
+    padding: 40rem 0;
+  }
+  &__container {
+  }
+  &__block {
+    display: flex;
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+    &-media {
+      max-width: 316rem;
+      margin: -137rem 73rem 0;
+      flex: 0 0 30%;
+      align-self: flex-end;
+      @media (max-width: $sm) {
+        width: 100%;
+        margin: 0 auto;
+        flex-basis: 100%;
+      }
+      @media (max-width: $xs) {
+        max-width: 260rem;
+      }
+    }
+    &-picture {
+      pointer-events: none;
+      user-select: none;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &-content {
+      padding: 50rem 50rem 40rem 19rem;
+      flex-grow: 1;
+      @media (max-width: $sm) {
+        width: 100%;
+        padding: 30rem;
+        flex-basis: 100%;
+        order: -1;
+      }
+    }
+    &-title {
+      margin: 0 0 18rem;
+    }
+    &-text {
+      margin: 0 0 24rem;
+      color: #6DD3FF;
+      > p {
+        margin-bottom: 1.65em;
+      }
+    }
+    &-info {
+      margin: 0 -40rem -40rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: $sm) {
+        margin-right: -20rem;
+        margin-bottom: -20rem;
+      }
+      &-card {
+        min-width: 129rem;
+        margin: 0 40rem 40rem 0;
+        font-weight: bold;
+        @media (max-width: $sm) {
+          max-width: calc(50% - 20rem);
+          margin-right: 20rem;
+          margin-bottom: 20rem;
+          flex-basis: calc(50% - 20rem);
+          text-align: center;
+        }
+        &-title {
+          margin: 0 0 2rem;
+          font-size: var(--fs-6);
+        }
+        &-amount {
+          font-size: var(--fs-3);
+        }
+      }
+    }
+  }
+}

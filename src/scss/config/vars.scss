@@ -1,0 +1,109 @@
+$siteResolution: 1px;
+$mainFont: 'Roboto Condensed';
+$accentFont: 'Khand';
+$mainWeight: 400;
+$lineHeight1: 1.3125;
+$lineHeight2: 1.28571428571;
+$lineHeight3: 1.14285714286;
+$lineHeight4: 1.125;
+$lineHeight5: 1;
+$lineHeight6: .90322580645;
+$lineHeightDefault: $lineHeight2;
+
+$containerWidth: 1340rem;
+
+$gap: 15rem;
+$gapFluid: 30rem;
+
+$radiusXs: 5rem;
+$radiusSm: 10rem;
+$radiusMd: 20rem;
+$radiusLg: 30rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000E2A;
+$blueCobaltColor: #0247FA;
+$blueDarkSlateColor: #06347A;
+$blueRoyalColor: #0C5EFF;
+$blueDenimColor: #158FFF;
+$blueAzureColor: #0085FF;
+$blueCeruleanColor: #27A4FF;
+$blueDodgerColor: #037FF2;
+$blueCapriColor: #04A5FF;
+$blueCeruleanLightColor: #05B4FF;
+$blueSkyColor: #37D6F9;
+$bluePaleColor: #7DC1FF;
+$bluePaleLightColor: #5BEBFF;
+$blueSteelColor: #5B73B1;
+$blueDarkColor: #1B24F1;
+$blueAzureLightColor: #3099FA;
+$yellowMaizeColor: #FFDE74;
+$yellowGoldenrodColor: #FFD85B;
+$yellowOliveColor: #C6A128;
+$orangeDarkColor: #F68C0F;
+$accentColor: $blueDarkColor;
+
+$ffMain: $mainFont, $accentFont, sans-serif, Arial;
+$ffAccent: $accentFont, $mainFont, sans-serif, Arial;
+$fontColor: $whiteColor;
+$fontWeight: $mainWeight;
+$bgSite: $blackColor;
+
+$gradientWhiteBlue: linear-gradient(90deg, $whiteColor 0%, $blueAzureColor 100%), $whiteColor;
+$gradientYellow: linear-gradient(135deg, $yellowOliveColor 0%, $yellowGoldenrodColor 100%);
+$gradientAccent: linear-gradient(135deg, $blueCeruleanLightColor 0%, $bluePaleLightColor 100%);
+$gradientRadlYellow: radial-gradient(30.08% 61.7% at 49.87% 100%, $yellowMaizeColor 0%, $orangeDarkColor 100%);
+$gradientAccentBlue: radial-gradient(30.08% 86.71% at 49.87% 100%, $blueSkyColor 0%, $blueAzureLightColor 100%);
+$gradientRadialAccent: radial-gradient(16.72% 50.13% at 8.21% 87.37%, rgba(39,164,255, .5) 0%, rgba(6,52,122, .5) 100%) $blueDarkColor;
+
+$boxShadowAccent1: 0 0 30rem rgba($blueAzureColor, .5);
+$boxShadowAccent2: 0 0 15rem rgba($blueCapriColor, 1);
+$boxShadowAccent3: 0 0 30rem 5rem #003776;
+$boxShadowYellow1: 0 0 30rem #D6B60F;
+$boxShadowPurple1: 0 0 30rem #E10CF3;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 14rem;
+  --fs-1: 62rem;
+  --fs-2: 32rem;
+  --fs-3: 22rem;
+  --fs-4: 16rem;
+  --fs-5: 14rem;
+  --fs-6: 12rem;
+  --gap: 15rem;
+  --gap-: -15rem;
+  --gap-fluid: 30rem;
+  --gap-fluid-: -30rem;
+
+  --scroll-offset: 180rem;
+  @media (max-width: $sm) {
+    --fs-default: 14rem;
+    --fs-1: 52rem;
+    --fs-2: 28rem;
+    --fs-3: 20rem;
+
+    --gap: 10rem;
+    --gap-: -10rem;
+    --gap-fluid: 20rem;
+    --gap-fluid-: -20rem;
+
+    --scroll-offset: 62rem;
+  }
+}

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'EvelynMorgan'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header js-header-sticky'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- intro BEGIN -->
+          <section id="intro" class="intro">
+            <div class="container intro__container">
+              <div class="intro__inner">
+                <div class="intro__content">
+                  <h1 class="title-gradient title-gradient--white-to-blue intro__title">
+                    <span>Copy, paste and profit my trading&nbsp;ideas</span>
+                  </h1>
+                  <h2 class="title-size-1 intro__subtitle">For free every&nbsp;day</h2>
+                  <div class="intro__list">
+                    <div class="intro__list-card">
+                      <div class="info-card">
+                        <div class="info-card__inner">
+                          <span class="info-card__icon"></span>
+                          <div class="info-card__content">
+                            <p class="info-card__text">10,000+ members from all over the world</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="intro__list-card">
+                      <div class="info-card">
+                        <div class="info-card__inner">
+                          <span class="info-card__icon"></span>
+                          <div class="info-card__content">
+                            <p class="info-card__text">The world's best rated trading program + community</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="intro__list-card">
+                      <div class="info-card">
+                        <div class="info-card__inner">
+                          <span class="info-card__icon"></span>
+                          <div class="info-card__content">
+                            <p class="info-card__text">Become profitable in the financial market</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-content intro__text">
+                    <p>Join my VIP channel for FREE, trade on my signals and profit around the clock</p>
+                  </div>
+                  <div class="cta-telegram intro__footer">
+                    <a href="https://telegram.org/" class="btn btn--theme-gradient-yellow btn--size-md cta-telegram__btn" target="_blank">
+                      <span class="btn__inner">
+                        <svg class="u-icon btn__icon btn__icon--dir-ltr">
+                          <use xlink:href="images/icons/icons.svg#telegram"></use>
+                        </svg>
+                        <span class="btn__title">Open in telegram</span>
+                      </span>
+                    </a>
+                    <div class="cta-telegram__content">
+                      <p class="cta-telegram__suptitle">Don’t have Telegram?</p>
+                      <a href="#" class="u-link cta-telegram__link">Download link</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__media">
+                  <picture class="intro__hero">
+                    <source srcset="images/intro-hero.webp" type="image/webp">
+                    <img src="images/intro-hero.png" alt="Copy, paste and profit my trading ideas">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro END -->
+          <!-- reviews BEGIN -->
+          <section id="reviews" class="reviews">
+            <div class="container reviews__container">
+              <div class="u-box u-box--theme-accent reviews__block">
+                <div class="reviews__aside">
+                  <h2 class="reviews__aside-title">Excellent</h2>
+                  <div class="u-rating reviews__aside-rating" style="--rating-progress: 5"></div>
+                  <p class="reviews__aside-subtitle">Based on 1,729 reviews</p>
+                  <div class="slider-control reviews__aside-slider-control">
+                    <div class="slider-control__inner">
+                      <button type="button" class="js-swiper-button-prev-1 swiper-button swiper-button-prev slider-control__btn">
+                        prev
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="js-swiper-button-next-1 swiper-button swiper-button-next slider-control__btn">
+                        next
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-reviews-slider-init swiper reviews__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="reviews-card reviews__slider-card">
+                        <div class="reviews-card__inner">
+                          <div class="u-rating reviews-card__rating" style="--rating-progress: 5"></div>
+                          <p class="reviews-card__title">Everything was amazing</p>
+                          <div class="u-content reviews-card__text">
+                            <p>Honestly, at first, I was very skeptical about the effectiveness of trading. Therefore, it was a great achievement for me to decide to join the Evelyn Morgan trading community. I did not expect to receive such a huge amount of maximally useful information. It took me 2 weeks to study all the materials and start putting the knowledge into practice. Most of all, I am grateful for the ready-made strategies, ideas and entry points, thanks to which I started to earn steadily. Now I make 80% profit!</p>
+                          </div>
+                          <p class="reviews-card__author">George Miles, 6 days ag</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-card reviews__slider-card">
+                        <div class="reviews-card__inner">
+                          <div class="u-rating reviews-card__rating" style="--rating-progress: 5"></div>
+                          <p class="reviews-card__title">Great experience</p>
+                          <div class="u-content reviews-card__text">
+                            <p>Before joining the Evelyn Morgan trading community, my salary was just the minimum average in the United States, but after watching video lessons, analyzing charts and strategies with Evelyn, my income skyrocketed to 150% of what it was before. I was worried that I wouldn't be able to grasp complex trading concepts or wouldn't have the time to learn. To my relief, Evelyn helps me understand all the details, which is perfect for beginner traders.</p>
+                          </div>
+                          <p class="reviews-card__author">Jordan Davies, 4 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-card reviews__slider-card">
+                        <div class="reviews-card__inner">
+                          <div class="u-rating reviews-card__rating" style="--rating-progress: 5"></div>
+                          <p class="reviews-card__title">Great experience</p>
+                          <div class="u-content reviews-card__text">
+                            <p>Before joining the Evelyn Morgan trading community, my salary was just the minimum average in the United States, but after watching video lessons, analyzing charts and strategies with Evelyn, my income skyrocketed to 150% of what it was before. I was worried that I wouldn't be able to grasp complex trading concepts or wouldn't have the time to learn. To my relief, Evelyn helps me understand all the details, which is perfect for beginner traders.</p>
+                          </div>
+                          <p class="reviews-card__author">Jordan Davies, 4 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-card reviews__slider-card">
+                        <div class="reviews-card__inner">
+                          <div class="u-rating reviews-card__rating" style="--rating-progress: 5"></div>
+                          <p class="reviews-card__title">Great experience</p>
+                          <div class="u-content reviews-card__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos porro minus ut nesciunt voluptates laudantium perferendis. Possimus cupiditate, ab eligendi ipsa eveniet id iusto magnam. Incidunt eligendi, molestias error.</p>
+                          </div>
+                          <p class="reviews-card__author">Jordan Davies, 4 days ago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- reviews END -->
+          <!-- strategy BEGIN -->
+          <section class="strategy">
+            <div class="container strategy__container">
+              <div class="strategy__block">
+                <h2 class="title-size-1 title-gradient title-gradient--white-to-blue strategy__block-title">
+                  <span>The Great Trading&nbsp;Strategy</span>
+                </h2>
+                <div class="strategy__block-media">
+                  <picture class="strategy__block-picture">
+                    <source srcset="images/strategy-img.webp" type="image/webp">
+                    <img src="images/strategy-img.jpg" alt="The Great Trading Strategy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- strategy END -->
+          <!-- author BEGIN -->
+          <section id="about" class="author">
+            <div class="container author__container">
+              <div class="u-box u-box--theme-accent author__block">
+                <div class="author__block-media">
+                  <picture class="author__block-picture">
+                    <source srcset="images/author-img.webp" type="image/webp">
+                    <img src="images/author-img.png" alt="The Great Trading author">
+                  </picture>
+                </div>
+                <div class="author__block-content">
+                  <h2 class="author__block-title">Evelyn Morgan</h2>
+                  <div class="u-content author__block-text">
+                    <p>Having been a trader for 8 years, I have seen that trading is not an easy job, especially for those who have embarked on this journey on their own. However, with the right mentorship it becomes just like any other business - manageable, exciting and profitable.</p>
+                    <p>n order to trade effectively it's important to pick up the theoretical base. That is why in my Telegram channel I give information about indicators, reveal trader's lifehacks, analyze mistakes and fuck-ups. And all this is free for everyone.</p>
+                    <p>I also share my trading signals with 15 thousand subscribers every day. Together we earn $350,000-400,000 per each trading session! You can also enter trades using my signals and earn $900 a day!</p>
+                  </div>
+                  <div class="author__block-info">
+                    <div class="author__block-info-card">
+                      <p class="author__block-info-card-title">Trading experience</p>
+                      <p class="author__block-info-card-amount">8 years</p>
+                    </div>
+                    <div class="author__block-info-card">
+                      <p class="author__block-info-card-title">Trades</p>
+                      <p class="author__block-info-card-amount">20 000+</p>
+                    </div>
+                    <div class="author__block-info-card">
+                      <p class="author__block-info-card-title">Followers</p>
+                      <p class="author__block-info-card-amount">15 000+</p>
+                    </div>
+                    <div class="author__block-info-card">
+                      <p class="author__block-info-card-title">Proven income</p>
+                      <p class="author__block-info-card-amount">$1Bln+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- author END -->
+          <!-- students BEGIN -->
+          <section class="students">
+            <div class="container students__container">
+              <h2 class="title-size-1 title-gradient title-gradient--white-to-blue students__title">
+                <span>Students from all over the world say</span>
+              </h2>
+              <div class="students__list">
+                <div class="students__list-col">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-1.webp" type="image/webp">
+                          <img src="images/students-card-1.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-2.webp" type="image/webp">
+                          <img src="images/students-card-2.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-3.webp" type="image/webp">
+                          <img src="images/students-card-3.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-4.webp" type="image/webp">
+                          <img src="images/students-card-3.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col is-hidden">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-1.webp" type="image/webp">
+                          <img src="images/students-card-1.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col is-hidden">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-2.webp" type="image/webp">
+                          <img src="images/students-card-2.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col is-hidden">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-3.webp" type="image/webp">
+                          <img src="images/students-card-3.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="students__list-col is-hidden">
+                  <div class="students-card students__list-card">
+                    <div class="students-card__inner">
+                      <div class="students-card__media">
+                        <picture class="students-card__picture">
+                          <source srcset="images/students-card-4.webp" type="image/webp">
+                          <img src="images/students-card-3.jpg">
+                        </picture>
+                        <button type="button" class="js-video-modal students-card__btn-play">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="students-card__content">
+                        <p class="students-card__text">“This is awesome! I'm glad i found Evelyn's group. I am now making a living by”</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="students__footer">
+                <a class="js-students-show-more u-link students__footer-show-more">Show more</a>
+              </footer>
+            </div>
+          </section>
+          <!-- students END -->
+          <!-- vip BEGIN -->
+          <section class="vip">
+            <div class="container vip__container">
+              <div class="row vip__row">
+                <div class="row__col--7 vip__col vip__col--content">
+                  <div class="vip__content">
+                    <h2 class="vip__title">My VIP members increase their deposit by substantially! No experience, no round-the-clock work, no overhigh risk</h2>
+                    <div class="cta-telegram vip__footer">
+                      <a href="https://telegram.org/" class="btn btn--theme-gradient-yellow btn--size-md cta-telegram__btn" target="_blank">
+                        <span class="btn__inner">
+                          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+                            <use xlink:href="images/icons/icons.svg#telegram"></use>
+                          </svg>
+                          <span class="btn__title">Open in telegram</span>
+                        </span>
+                      </a>
+                      <div class="cta-telegram__content">
+                        <p class="cta-telegram__suptitle">Don’t have Telegram?</p>
+                        <a href="#" class="u-link cta-telegram__link">Download link</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--5 vip__col vip__col--text">
+                  <div class="u-content vip__text">
+                    <p>Capital must be in motion, otherwise it risks disappearing due to inflation within 2-3 years. That's why I created the safest way of trading possible. Together with me and my community in my Telegram channel you will receive daily educational materials, tips on risk management and the most effective trading techniques. You can ask me any questions and you will always get clear and understandable answers. And most importantly, don't hesitate. I will not be embarrassed by even the most seemingly stupid questions. I even show many participants what buttons to press to start trading. a few hours of your time.</p>
+                    <p>Don't worry, in a few days you will be able to understand everything and start making your first money! You will be able to trade with my community of 15,000 members. Receive signals, enter trades and take guaranteed profits!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- vip END -->
+          <!-- instagram BEGIN -->
+          <section class="instagram">
+            <div class="container instagram__container">
+              <h2 class="title-size-1 title-gradient title-gradient--white-to-blue instagram__title">
+                <span>Instagram</span>
+              </h2>
+              <div class="instagram__list">
+                <div class="instagram__list-col">
+                  <div class="instagram-card instagram__list-card">
+                    <div class="instagram-card__media">
+                      <picture class="instagram-card__picture">
+                        <source srcset="images/instagram-card-1.webp" type="image/webp">
+                        <img src="images/instagram-card-1.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="instagram__list-col">
+                  <div class="instagram-card instagram__list-card">
+                    <div class="instagram-card__media">
+                      <picture class="instagram-card__picture">
+                        <source srcset="images/instagram-card-2.webp" type="image/webp">
+                        <img src="images/instagram-card-2.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="instagram__list-col">
+                  <div class="instagram-card instagram__list-card">
+                    <div class="instagram-card__media">
+                      <picture class="instagram-card__picture">
+                        <source srcset="images/instagram-card-3.webp" type="image/webp">
+                        <img src="images/instagram-card-3.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="instagram__list-col">
+                  <div class="instagram-card instagram__list-card">
+                    <div class="instagram-card__media">
+                      <picture class="instagram-card__picture">
+                        <source srcset="images/instagram-card-4.webp" type="image/webp">
+                        <img src="images/instagram-card-4.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="instagram__list-col">
+                  <div class="instagram-card instagram__list-card">
+                    <div class="instagram-card__media">
+                      <picture class="instagram-card__picture">
+                        <source srcset="images/instagram-card-5.webp" type="image/webp">
+                        <img src="images/instagram-card-5.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- instagram END -->
+          <!-- appeal BEGIN -->
+          <section class="appeal">
+            <div class="container appeal__container">
+              <div class="u-box u-box--theme-accent appeal__block">
+                <div class="appeal__block-inner">
+                  <h2 class="appeal__block-title">Trade with Evelyn - Easy And Quick Trading</h2>
+                  <div class="u-content appeal__block-text">
+                    <p>After a long time, we developed unique trading strategies based on AI, which shortened our interaction with the market to just a few hours a day! Join my channel to get a FREE Trading Signals and strategies, so you can spend few minutes a day following them and make money! 🏆</p>
+                  </div>
+                  <div class="cta-telegram appeal__block-footer">
+                    <a href="https://telegram.org/" class="btn btn--theme-gradient-yellow btn--size-md cta-telegram__btn" target="_blank">
+                      <span class="btn__inner">
+                        <svg class="u-icon btn__icon btn__icon--dir-ltr">
+                          <use xlink:href="images/icons/icons.svg#telegram"></use>
+                        </svg>
+                        <span class="btn__title">Open in telegram</span>
+                      </span>
+                    </a>
+                    <div class="cta-telegram__content">
+                      <p class="cta-telegram__suptitle">Don’t have Telegram?</p>
+                      <a href="#" class="u-link cta-telegram__link">Download link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- appeal END -->
+          <!-- results BEGIN -->
+          <section id="results" class="results">
+            <div class="container results__container">
+              <h2 class="title-size-1 title-gradient title-gradient--white-to-blue results__title">
+                <span>Real Results</span>
+              </h2>
+              <div class="slider-control results__slider-control">
+                <div class="slider-control__inner">
+                  <button type="button" class="js-swiper-button-prev-2 swiper-button swiper-button-prev slider-control__btn">
+                    prev
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="js-swiper-button-next-2 swiper-button swiper-button-next slider-control__btn">
+                    next
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="js-results-slider-init results__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-1.webp" type="image/webp">
+                          <img src="images/results-card-1.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-2.webp" type="image/webp">
+                          <img src="images/results-card-2.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-3.webp" type="image/webp">
+                          <img src="images/results-card-3.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-4.webp" type="image/webp">
+                          <img src="images/results-card-4.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-5.webp" type="image/webp">
+                          <img src="images/results-card-5.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="results-card">
+                      <div class="results-card__media">
+                        <picture class="results-card__picture">
+                          <source srcset="images/results-card-5.webp" type="image/webp">
+                          <img src="images/results-card-5.jpg">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="results__footer">
+                <a href="https://telegram.org/" class="btn btn--theme-gradient-yellow btn--size-md results__footer-btn" target="_blank">
+                  <span class="btn__inner">
+                    <svg class="u-icon btn__icon btn__icon--dir-ltr">
+                      <use xlink:href="images/icons/icons.svg#telegram"></use>
+                    </svg>
+                    <span class="btn__title">Open in telegram</span>
+                  </span>
+                </a>
+              </footer>
+            </div>
+          </section>
+          <!-- results END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

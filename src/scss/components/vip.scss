@@ -1,0 +1,53 @@
+.vip {
+  padding: 72rem 0 100rem;
+  position: relative;
+  @media (max-width: $sm) {
+    padding: 40rem 0;
+  }
+  &:before {
+    background: url(../images/vip-bg.png) center top / contain no-repeat;
+    width: 1548rem;
+    height: 746rem;
+    margin-left: 87rem;
+    content: '';
+    position: absolute;
+    top: -215rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+  }
+  &__container {
+  }
+  &__row {
+  }
+  &__col {
+    &--content {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--text {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__content {
+    padding: 7rem 0 0 65rem;
+    @media (max-width: $sm) {
+      margin: 0 0 30rem;
+      padding: 0;
+    }
+  }
+  &__title {
+    margin: 0 0 32rem;
+  }
+  &__footer {
+  }
+  &__text {
+    padding-right: 36rem;
+    color: #6DD3FF;
+  }
+}

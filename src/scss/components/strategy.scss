@@ -1,0 +1,53 @@
+.strategy {
+  padding: 87rem 0 40rem;
+  position: relative;
+  @media (max-width: $sm) {
+    padding: 80rem 0 40rem;
+  }
+  &:before {
+    background: url(../images/strategy-bg.png) center top / contain no-repeat;
+    width: 1548rem;
+    height: 1142rem;
+    margin-left: -427rem;
+    content: '';
+    position: absolute;
+    top: -398rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+  }
+  &__container {
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+    &-title {
+      margin: 0 30rem 0 0;
+      flex-grow: 1;
+      @media (max-width: $sm) {
+        margin: 0 0 40rem;
+        text-align: center;
+      }
+    }
+    &-media {
+      max-width: 798rem;
+      flex: 0 0 63%;
+      @media (max-width: $sm) {
+        width: 100%;
+        margin: 0 auto;
+        flex-basis: 100%;
+      }
+    }
+    &-picture {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

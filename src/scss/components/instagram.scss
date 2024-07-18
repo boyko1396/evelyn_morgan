@@ -1,0 +1,48 @@
+.instagram {
+  padding: 66rem 0 46rem;
+  @media (max-width: $sm) {
+    padding: 40rem 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 48rem;
+    text-align: center;
+    @media (max-width: $sm) {
+      margin-bottom: 40rem;
+    }
+  }
+  &__list {
+    margin: 0 -12rem;
+    display: flex;
+    @media (max-width: $sm) {
+      margin: 0 -10rem;
+    }
+    @media (max-width: $xs) {
+      margin-bottom: -20rem;
+      flex-wrap: wrap;
+    }
+    &-col {
+      max-width: 20%;
+      padding: 0 13rem;
+      flex: 0 0 20%;
+      @media (max-width: $sm) {
+        max-width: 25%;
+        padding: 0 10rem;
+        flex-basis: 25%;
+      }
+      @media (max-width: $xs) {
+        max-width: 50%;
+        margin-bottom: 20rem;
+        flex-basis: 50%;
+      }
+      &:last-child {
+        @media (max-width: $xs) {
+          display: none;
+        }
+      }
+    }
+    &-card {
+    }
+  }
+}

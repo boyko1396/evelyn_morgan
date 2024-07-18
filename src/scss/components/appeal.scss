@@ -1,0 +1,33 @@
+.appeal {
+  padding: 29rem 0;
+  @media (max-width: $sm) {
+    padding: 40rem 0;
+  }
+  &__container {
+  }
+  &__block {
+    padding: 70rem 70rem 86rem;
+    @media (max-width: $sm) {
+      padding: 50rem 30rem;
+    }
+    &-inner {
+      max-width: 614rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-title {
+      margin: 0 0 40rem;
+      text-align: center;
+    }
+    &-text {
+      margin: 0 0 35rem;
+      font-size: var(--fs-4);
+      line-height: $lineHeight4;
+      text-align: center;
+    }
+    &-footer {
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.intro {
+  padding: 126rem 0 0;
+  position: relative;
+  z-index: 0;
+  &:before {
+    background: url(../images/intro-bg.jpg) center top / contain no-repeat;
+    width: 1600rem;
+    height: 804rem;
+    margin-left: 160rem;
+    content: '';
+    position: absolute;
+    top: -38rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  &__container {
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+  }
+  &__content {
+    max-width: 800rem;
+    flex-grow: 1;
+    @media (max-width: $lg) {
+      padding-bottom: 80rem;
+    }
+    @media (max-width: $sm) {
+      max-width: 100%;
+      padding-bottom: 60rem;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+  &__title {
+    max-width: 550rem;
+    margin: 0 0 10rem;
+    text-transform: uppercase;
+    @media (max-width: $sm) {
+      margin: 0 auto 20rem;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    background: rgba($blueCobaltColor, .7);
+    margin: 0 0 30rem;
+    padding: 21rem 20rem 19rem 20rem;
+    display: inline-block;
+    color: $whiteColor;
+    text-transform: uppercase;
+    box-shadow: $boxShadowAccent1;
+    vertical-align: top;
+  }
+  &__list {
+    margin: 0 -16rem -16rem 0;
+    padding-bottom: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $sm) {
+      margin-bottom: -5rem;
+      flex-direction: column;
+      text-align: left;
+    }
+    &-card {
+      width: 246rem;
+      margin: 0 16rem 16rem 0;
+      @media (max-width: $sm) {
+        width: auto;
+        margin-bottom: 5rem;
+        text-align: left;
+      }
+    }
+  }
+  &__text {
+    margin: 0 0 20rem;
+    line-height: $lineHeight4;
+    color: $bluePaleColor;
+  }
+  &__footer {
+    @media (max-width: $sm) {
+      justify-content: center;
+    }
+  }
+  &__media {
+    max-width: 464rem;
+    margin: -64px 101px 0 -162rem;
+    flex: 0 0 38%;
+    align-self: flex-end;
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+  &__hero {
+    pointer-events: none;
+    user-select: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

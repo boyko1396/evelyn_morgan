@@ -1,0 +1,31 @@
+.results {
+  padding: 49rem 0;
+  @media (max-width: $sm) {
+    padding: 40rem 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 18rem;
+    text-align: center;
+  }
+  &__slider {
+    margin-right: 12rem;
+    margin-bottom: 58rem;
+    @media (max-width: $sm) {
+      margin-right: 0;
+      margin-bottom: 40rem;
+    }
+    overflow: hidden;
+    &-control {
+      margin: 0 0 34rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__footer {
+    text-align: center;
+    &-btn {
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  padding: 31rem 0 77rem;
+  @media (max-width: $sm) {
+    padding: 30rem 0;
+  }
+  &__container {
+  }
+  &__copyright {
+    margin: 0;
+    font-size: var(--fs-4);
+    line-height: $lineHeight4;
+    color: $blueSteelColor;
+    text-align: center;
+    @media (max-width: $sm) {
+      font-size: 12rem;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.reviews {
+  position: relative;
+  z-index: 1;
+  &__container {
+  }
+  &__block {
+    padding: 42rem 34rem 49rem 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $sm) {
+      padding: 30rem;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__aside {
+    max-width: 204rem;
+    margin-right: 40rem;
+    flex: 0 0 204rem;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 40rem;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+    }
+    &-title {
+      margin: 0 0 1rem;
+      font-weight: bold;
+      font-family: $ffMain;
+    }
+    &-rating {
+      margin: 0 auto 14rem 0;
+    }
+    &-subtitle {
+      margin: 0 0 30rem;
+      @media (max-width: $sm) {
+        margin-bottom: 0;
+      }
+    }
+    &-slider-control {
+      @media (max-width: $sm) {
+        display: inline-flex;
+      }
+    }
+  }
+  &__slider {
+    margin-top: 4rem;
+    flex-grow: 1;
+    @media (max-width: $sm) {
+      margin-top: 0;
+      text-align: left;
+    }
+    .swiper-wrapper {
+      align-items: initial;
+    }
+    .swiper-slide {
+      height: auto;
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}
